@@ -3,9 +3,10 @@
   flex-direction: column;
   align-items: center;
   max-width: 100vw;
+  height: 40vh;
 }
 
 .input-label {
-  margin-bottom: 1rem;
+  margin-bottom: 0.75rem;
   font-size: 2rem;
 }
