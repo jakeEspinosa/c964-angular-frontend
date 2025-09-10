@@ -1,4 +1,11 @@
-<form action="" class="input-form">
+<div class="result-container">
+  <h3>Overall Result (Closer to 1 is more positive, closer to 0 is more negative):</h3>
+  <p>{{ data }}</p>
+  <p>Negative: {{ negative }}</p>
+  <p>Positive: {{ positive }}</p>
+</div>
+
+<form class="input-form">
   <label for="input-text" class="input-label">Input Text:</label>
   <textarea
     id="input-text"
@@ -8,4 +15,5 @@
     required
     [formControl]="inputText"
   ></textarea>
+  <button type="button" (click)="onSubmit($event)">Submit</button>
 </form>
